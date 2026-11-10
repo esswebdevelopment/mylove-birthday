@@ -1,0 +1,82 @@
+{
+  "title": "O quanto você me conhece de tanto amor por você?",
+  "subtitle": "8 perguntas. Bora ver se você me conhece mesmo...",
+  "wrongMessages": [
+    "Iiiiiii mano, precisa de ajuda, tá perdida",
+    "Se tá namorando é outro",
+    "Vishe mano, é melhor parar...",
+    "Tá vendo mano? Tem que acompanhar a menina",
+    "É melhor parar zé",
+    "Para para para para, tá perdida",
+    "Tá errando tudo em meu",
+    "Se tivesse com outro acertava tudo"
+  ],
+  "rightMessages": [
+    "Acertou! é o básico né",
+    "Se não acertar o básico pode desistir",
+    "Boa dendengona",
+    "O mulher boa",
+    "Nunca duvidei dessa mulher",
+    "A braba",
+    "Que isso muié",
+    "Merece uma dedadinha só por esse desempenho"
+  ],
+  "results": [
+    { "min": 8, "text": "Acertou tudo! vai ter que dar o 👌 agora." },
+    { "min": 6, "text": "Se esforçar um pouco mais zé, slc." },
+    { "min": 4, "text": "Foi na média mano... o que eu faço com essa menina?" },
+    { "min": 0, "text": "Pode ir com outro, melhor" }
+  ],
+  "questions": [
+    {
+      "text": "O que eu mais gosto em você fisicamente?",
+      "options": ["Mandíbula", "Cabelão", "Rabo", "Olhar"],
+      "correct": 1
+    },
+    {
+      "text": "Qual o vestido que eu mais gosto que você vista?",
+      "options": ["Vestido preto/Zara", "Vestido verde/Zara", "Saia off-white/Zara", "Pelada"],
+      "correct": 0
+    },
+    {
+      "text": "Eu gosto de dar mais tchelo no:",
+      "options": ["Didode do momo", "No zoio", "Canto do nariz", "Testa"],
+      "correct": 2
+    },
+    {
+      "text": "Você me irrita quando você:",
+      "options": [
+        "Não me responde na call quando pergunto (fdp)",
+        "Não deixa eu falar",
+        "É teimosa",
+        "Não me avisa das atividades"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "O que eu mais peço pra você me dar depois de casados?",
+      "options": [
+        "Comidinha boa",
+        "Festa surpresa de casamento (mesa posta)",
+        "PS5 pra jogar GTA 6",
+        "O cu"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Qual vai ser nosso maior date no domingo depois de casados?",
+      "options": ["Jantar na casa dos pais", "Congregar à noite", "Ibirapuera", "Assistir série"],
+      "correct": 2
+    },
+    {
+      "text": "O que você acha que eu menos gosto do Salsicha?",
+      "options": ["Do bafo", "Da perna manca", "De cagar a casa inteira", "TUDO"],
+      "correct": 3
+    },
+    {
+      "text": "O que você acha que eu vou te dar de presente dia 19/11?",
+      "options": ["Sapato da Zara", "Jantar", "Uma roupa", "Vou esperar o dia pra saber"],
+      "correct": 3
+    }
+  ]
+}

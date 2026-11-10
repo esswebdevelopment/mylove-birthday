@@ -1,0 +1,34 @@
+.motivos { width: min(100%, 440px); margin: 0 auto; padding: 56px 18px max(64px, env(safe-area-inset-bottom)); }
+.mt-title { margin: 0 0 32px; text-align: center; color: var(--red); font: 400 clamp(28px, 8.4vw, 38px)/1.1 var(--hand); }
+.mt-title span { display: block; margin-top: 8px; font: 400 13px/1.4 var(--type); color: var(--ink); }
+
+.mt-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 26px; }
+.mt-list li { transform: rotate(var(--rot)); }
+.mt-list li:nth-child(even) { margin-left: 6%; }
+.mt-list li:nth-child(odd) { margin-right: 6%; }
+
+.mt-card { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: pointer; perspective: 1000px; -webkit-tap-highlight-color: transparent; font: inherit; color: inherit; }
+.mt-inner { display: grid; transition: transform .7s cubic-bezier(.3, .9, .3, 1.15); transform-style: preserve-3d; }
+.mt-card.flipped .mt-inner { transform: rotateY(180deg); }
+.mt-card:active .mt-inner { scale: .98; }
+
+/* as duas faces ocupam a mesma célula: a altura se ajusta à maior */
+.mt-face {
+  grid-area: 1 / 1; min-height: 190px; border-radius: 10px; padding: 22px 20px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  box-shadow: 0 10px 22px rgba(43, 38, 35, .18);
+}
+.mt-front { position: relative; background: var(--red); color: #fff; border: 3px solid #fff; outline: 3px solid var(--red); outline-offset: -9px; }
+.mt-front small { font: 400 20px var(--hand); letter-spacing: .08em; text-transform: uppercase; opacity: .9; }
+.mt-front strong { font: 400 84px/1 var(--hand); }
+.mt-bow { position: absolute; right: 14px; bottom: 10px; width: 54px; stroke: #fff; transform: rotate(10deg); }
+.mt-sp { position: absolute; width: 22px; stroke: rgba(255, 255, 255, .8); }
+.mt-sp.a { left: 16px; top: 14px; }
+.mt-sp.b { right: 22px; top: 26px; width: 14px; }
+
+.mt-back { background: #fffdf8; border: 2.5px dashed rgba(180, 34, 43, .55); transform: rotateY(180deg); }
+.mt-num { position: absolute; top: 10px; left: 14px; font: 400 22px var(--hand); color: var(--red); }
+.mt-text { font: 400 clamp(21px, 6vw, 25px)/1.22 var(--hand); color: var(--ink); text-wrap: balance; }
+
+@media (prefers-reduced-motion: reduce) { .mt-inner { transition: none; } }
