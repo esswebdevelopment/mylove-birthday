@@ -17,10 +17,12 @@
 .gate-sp.b { right: -30px; top: 80px; width: 15px; }
 
 .music-btn {
-  position: fixed; z-index: 50; top: max(12px, env(safe-area-inset-top)); right: 12px; width: 44px; height: 44px;
-  display: grid; place-items: center; border: 0; border-radius: 50%; background: var(--ink); color: #fff; cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
+  position: fixed; z-index: 50; top: max(10px, env(safe-area-inset-top)); right: 10px; width: 32px; height: 32px;
+  display: grid; place-items: center; padding: 0; border: 0; border-radius: 50%;
+  background: transparent; color: var(--ink); opacity: .6; cursor: pointer; transition: opacity .2s;
+  -webkit-tap-highlight-color: transparent;
 }
+.music-btn:hover, .music-btn:active { opacity: 1; }
 
 @keyframes gate-beat { 50% { transform: scale(1.1) rotate(-3deg); } }
 @media (prefers-reduced-motion: reduce) { .gate-bow { animation: none; } }

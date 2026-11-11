@@ -8,6 +8,7 @@ import Vales from './blocks/Vales.jsx'
 import Carta from './blocks/Carta.jsx'
 import DecoColumn from './blocks/DecoColumn.jsx'
 import { scatter } from './data/scatter.js'
+import musica from './assets/musica.mp3'
 
 const VOLUME = 0.6
 
@@ -34,19 +35,19 @@ export default function App() {
           if (v >= VOLUME) clearInterval(fade.current)
         }, 150)
       })
-      .catch(() => {}) // sem arquivo de música ou som bloqueado: o site segue normal
+      .catch((e) => console.warn('A música não tocou:', e)) // o site segue normal mesmo sem som
   }
 
   const toggle = () => {
     const a = audio.current
     if (!a) return
-    if (a.paused) { a.volume = VOLUME; a.play().then(() => setPlaying(true)).catch(() => {}) }
+    if (a.paused) { a.volume = VOLUME; a.play().then(() => setPlaying(true)).catch((e) => console.warn(e)) }
     else { a.pause(); setPlaying(false) }
   }
 
   return (
     <>
-      <audio ref={audio} src="/musica.mp3" loop preload="auto" />
+      <audio ref={audio} src={musica} loop preload="auto" />
       {!entered && <Gate onEnter={enter} />}
       {entered && <MusicButton playing={playing} onToggle={toggle} />}
       <main>
