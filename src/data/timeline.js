@@ -20,6 +20,6 @@ export const moments = [
 
 export const closing = {
   quote:
-    'Se orgulhe de tudo isso (menos das minhas brincadeiras no meio do caminho). Se orgulhe das suas conquistas e do seu esforço. Sem a sua vontade e a sua força, nada disso teria acontecido.',
+    'Se orgulhe de tudo isso (menos das minhas brincadeiras ai no meio). Se orgulhe das suas conquistas e do seu esforço. Sem a sua vontade e a sua força, nada disso teria acontecido.',
   big: 'Eu me orgulho de você. Do que você faz e de quem você é.',
 }

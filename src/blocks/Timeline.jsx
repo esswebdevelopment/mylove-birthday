@@ -1,10 +1,8 @@
 import { useEffect, useRef } from 'react'
 import { moments, closing } from '../data/timeline.js'
-import { Bow, Sparkle } from '../art.jsx'
 import './timeline.css'
 
 const TILT = [-3, 2.5, -1.5, 3, -2.5, 1.8, -3, 2, -1.8, 2.8, -2.2, 1.6]
-const DECO = { 2: 'bow', 5: 'sparkle', 8: 'bow', 10: 'sparkle' }
 
 export default function Timeline() {
   const root = useRef(null)
@@ -39,8 +37,6 @@ export default function Timeline() {
               </div>
               <figcaption>{m.text}</figcaption>
             </figure>
-            {DECO[i] === 'bow' && <Bow className={`tl-deco ${i % 2 ? 'dl' : 'dr'}`} aria-hidden="true" />}
-            {DECO[i] === 'sparkle' && <Sparkle className={`tl-deco sp ${i % 2 ? 'dl' : 'dr'}`} aria-hidden="true" />}
           </li>
         ))}
       </ol>

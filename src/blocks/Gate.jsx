@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Bow, Sparkle } from '../art.jsx'
+import Doodle from '../blocks/Doodle.jsx'
 import './gate.css'
 
 // Tela "Clique para entrar": desfoca o site, trava a rolagem e, ao clicar, chama onEnter (que toca a música).
@@ -26,8 +26,9 @@ export default function Gate({ onEnter }) {
   return (
     <button className={`gate ${leaving ? 'leaving' : ''}`} onClick={enter} aria-label="Clique para entrar">
       <span className="gate-in">
-        <Sparkle className="gate-sp a" aria-hidden="true" />
-        <Sparkle className="gate-sp b" aria-hidden="true" />
+        <Doodle name="hearts" className="gate-sp a" />
+        <Doodle name="strawberry1" className="gate-sp b" />
+        <Doodle name="envelope" className="gate-bow" />
         <strong>Natedito que hoje é o aniversário do meu eteeeengo genti.. clica pra entrar momo</strong>
       </span>
     </button>

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motivos, textos } from '../data/motivos.js'
-import { Bow, Sparkle } from '../art.jsx'
+import Doodle from '../blocks/Doodle.jsx'
 import './motivos.css'
 
 const TILT = [-2, 1.8, -1.4, 2.2]
@@ -29,11 +29,11 @@ export default function Motivos() {
             >
               <span className="mt-inner">
                 <span className="mt-face mt-front">
-                  <Sparkle className="mt-sp a" aria-hidden="true" />
-                  <Sparkle className="mt-sp b" aria-hidden="true" />
+                  <Doodle name="hearts" className="mt-sp a" />
+                  <Doodle name="hearts" className="mt-sp b" />
                   <small>motivo</small>
                   <strong>{i + 1}</strong>
-                  <Bow className="mt-bow" aria-hidden="true" />
+                  <Doodle name="heartArrow" className="mt-bow" />
                 </span>
                 <span className="mt-face mt-back">
                   <span className="mt-num">#{i + 1}</span>

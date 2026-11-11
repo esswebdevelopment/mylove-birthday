@@ -6,6 +6,8 @@ import Quiz from './blocks/Quiz.jsx'
 import Motivos from './blocks/Motivos.jsx'
 import Vales from './blocks/Vales.jsx'
 import Carta from './blocks/Carta.jsx'
+import DecoColumn from './blocks/DecoColumn.jsx'
+import { scatter } from './data/scatter.js'
 
 const VOLUME = 0.6
 
@@ -50,11 +52,11 @@ export default function App() {
       <main>
         {/* o key refaz a animação da abertura quando ela clica em "entrar" */}
         <Opening key={entered ? 'in' : 'out'} />
-        <Timeline />
-        <Quiz />
-        <Motivos />
-        <Vales />
-        <Carta />
+        <DecoColumn items={scatter.timeline}><Timeline /></DecoColumn>
+        <DecoColumn items={scatter.quiz}><Quiz /></DecoColumn>
+        <DecoColumn items={scatter.motivos}><Motivos /></DecoColumn>
+        <DecoColumn items={scatter.vales}><Vales /></DecoColumn>
+        <DecoColumn items={scatter.carta}><Carta /></DecoColumn>
       </main>
     </>
   )
